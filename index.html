@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Missão Biomas: quiz educativo de Ciências para alunos do 6º ano.">
+  <title>Missão Biomas | Quiz de Ciências</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand-mark" aria-hidden="true">🌿</div>
+    <div><p class="eyebrow">QUIZ EDUCATIVO • CIÊNCIAS</p><h1>Missão <span>Biomas</span></h1></div>
+    <div class="header-badge">6º ano <span>🎒</span></div>
+  </header>
+  <main>
+    <section id="start-screen" class="panel start-screen" aria-labelledby="start-title">
+      <div class="hero-emoji" aria-hidden="true">🌎</div>
+      <p class="eyebrow">SUA AVENTURA COMEÇA AQUI</p>
+      <h2 id="start-title">Pronto para explorar a natureza?</h2>
+      <p class="intro">Responda às perguntas, aprenda curiosidades de Ciências e cuide do nosso planeta!</p>
+      <div class="feature-row"><span>⭐ 10 perguntas</span><span>❤️ 3 vidas</span><span>🏆 Até 100 pontos</span></div>
+      <button id="start-btn" class="primary-btn">Começar missão <span aria-hidden="true">➜</span></button>
+      <p class="small-note">Sem cadastro. Só curiosidade e diversão!</p>
+    </section>
+    <section id="game-screen" class="panel game-screen hidden" aria-labelledby="question-text">
+      <div class="game-topline"><span id="question-counter">Pergunta 1 de 10</span><span id="lives" aria-label="Três vidas restantes">❤️ ❤️ ❤️</span></div>
+      <div class="progress-track" role="progressbar" aria-label="Progresso do quiz" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" id="progress-track"><div id="progress-fill"></div></div>
+      <div class="score-line"><span>⭐ Pontuação</span><strong id="score">0</strong></div>
+      <div class="question-icon" aria-hidden="true" id="question-icon">🌱</div>
+      <h2 id="question-text">Pergunta aparecerá aqui</h2>
+      <div id="answers" class="answers" aria-label="Alternativas de resposta"></div>
+      <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+      <button id="next-btn" class="primary-btn hidden">Próxima pergunta <span aria-hidden="true">➜</span></button>
+    </section>
+    <section id="result-screen" class="panel result-screen hidden" aria-labelledby="result-title">
+      <div class="hero-emoji" id="result-emoji" aria-hidden="true">🏆</div><p class="eyebrow">MISSÃO CONCLUÍDA</p>
+      <h2 id="result-title">Mandou bem, explorador!</h2><p id="result-message" class="intro">Seu resultado aparecerá aqui.</p>
+      <div class="final-score"><span>Você fez</span><strong id="final-score">0</strong><span>pontos</span></div>
+      <p id="result-detail" class="result-detail"></p><button id="restart-btn" class="primary-btn">Jogar novamente ↻</button>
+    </section>
+  </main>
+  <footer><p>🌱 Missão Biomas • Aprender também é cuidar do planeta.</p><p class="footer-small">Projeto educativo de Ciências • HTML, CSS e JavaScript</p></footer>
+</body>
+</html>
